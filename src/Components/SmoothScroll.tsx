@@ -21,6 +21,7 @@ export const SmoothScroll = ({ children , isOpen}:ISmoothScrollProps) => {
 
 	const [pageHeight, setPageHeight] = useState(0);
 
+	/* eslint-disable @typescript-eslint/no-explicit-any */
 	const resizePageHeight = useCallback((entries: any) => {
 		for (const entry of entries) {
 			setPageHeight(entry.contentRect.height)
@@ -31,6 +32,8 @@ export const SmoothScroll = ({ children , isOpen}:ISmoothScrollProps) => {
 		const resizeObserver = new ResizeObserver(entries =>
 			resizePageHeight(entries)
 		)
+
+		// eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
 		scrollRef && resizeObserver.observe(scrollRef.current!)
 		return () => resizeObserver.disconnect()
 	}, [scrollRef, resizePageHeight])
