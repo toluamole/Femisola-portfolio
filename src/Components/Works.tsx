@@ -56,7 +56,7 @@ export const Works = () => {
 						<Tbody>
 							{works.map((item) => {
 								return(
-									<><Tr key={item.id} >
+									<><Tr key={item.id } >
 										<Td  fontFamily={'heading'} fontWeight={'600'} color={'#fff'} fontSize={['18px','24px']}>{item.company}</Td>
 										<Td isNumeric fontFamily={'heading'} fontSize={['18px','24px']} fontWeight={600}  color={'#93979D'}>{item.year}</Td>
 									</Tr>

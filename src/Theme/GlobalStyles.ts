@@ -9,23 +9,27 @@ export const GlobalStyles = css`
     @font-face {
         font-family: 'Clash Grotesk';
         font-style: normal;
-        font-weight: 200;
+        font-weight: 400;
         src: url('/ClashGrotesk-light.otf');
     }    
     @font-face {
         font-family: 'Clash Grotesk';
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         src: url('/ClashGrotesk-Medium.otf');
     } 
     @font-face {
         font-family: 'Clash Grotesk';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         src: url('/ClashGrotesk-Regular.otf');
     } 
     .chakra-button:hover p{
         padding-right: 10px ;
         transition: all .3s ease;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
     }
 `;

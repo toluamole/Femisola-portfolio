@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Flex, Text, Image, Stack } from '@chakra-ui/react';
+import { Box, Flex, Image, Stack, Heading } from '@chakra-ui/react';
 import backgroundImage from '../Assets/Space-background.png';
-import { CloseIcon } from '@chakra-ui/icons';
 import starBox from '../Assets/Images/star-box.svg';
 import { AppRoutes } from '../Routes/AppRoutes';
 import { useNavigate } from 'react-router-dom';
 import circleArrow from '../Assets/Images/circleArrow.svg'
 import { MotionBox, rotation } from '../Pages/Home';
 import Star from '../Assets/Images/Star.svg';
+import closeIcon from '../Assets/Images/closeIcon.svg';
 
 interface INavigationProps {
   isOpen: boolean;
@@ -21,12 +21,12 @@ const NavigationItems =[
 		path: AppRoutes.home
 	},
 	{
-		id: 0,
+		id: 1,
 		menu: 'About Me',
 		path: AppRoutes.about
 	},
 	{
-		id: 0,
+		id: 1,
 		menu: 'Projects',
 		path: AppRoutes.projects
 	}
@@ -34,7 +34,22 @@ const NavigationItems =[
 
 export const Navigation = ({ isOpen, onClose }:INavigationProps) => {
 	const [open, setOpen] = useState<boolean>(isOpen);
+	const [hoveredLink, setHoveredLink] = useState('');
 	const navigate = useNavigate();
+
+	const _handleMouseEnter = (menuItem:string) => {
+		if(menuItem){
+			setHoveredLink(menuItem);
+		}
+		
+		
+	}
+
+	const _handleMouseLeave = (menuItem:string) => {
+		if(menuItem){
+			setHoveredLink('');
+		}
+	}
 
 	useEffect(() => {
 		setOpen(isOpen);
@@ -53,24 +68,55 @@ export const Navigation = ({ isOpen, onClose }:INavigationProps) => {
 			bgSize={'cover'}
 			h={'100vh'}
 			overflow={'hidden'}
-			opacity={open ? '1' : '0'}
+			display={open ? 'block' : 'none'}
 			transition="all 0.3s ease-in-out"
 			zIndex={1}
-			px={['30px','70px']}
+			px={['30px','60px']}
 		>
 			<Box  overflow="hidden">
-				<Flex  cursor={'pointer'} borderBottom={'1px solid white'} py={4} justifyContent={'space-between'} color={'#fff'}>
+				<Flex borderBottom={'1px solid white'} py={6}  justifyContent={'space-between'} color={'#fff'}>
 					<Image src={starBox} onClick={() => navigate(AppRoutes.home)} cursor={'pointer'} />
-					<CloseIcon onClick={onClose}  />
+					<Box cursor={'pointer'} onClick={onClose}><Image src={closeIcon}   /></Box>
 				</Flex>
 				<Flex direction={['column', 'row']} justifyContent={'space-between'}>
 					<Stack pt={20} spacing={8}>
 						{
-							NavigationItems.map((item) => {
+							NavigationItems.map((item, index) => {
 								return(
-									<Stack cursor={'pointer'} onClick={() => navigate(item.path)}    direction={'row'} spacing={'48px'} justifyContent={'flex-start'} alignItems={'center'}  key={item.id}>
-										<Text fontSize={['45px','96px']} fontWeight={500} color={'#fff'}>{item.menu}</Text>
-										<Image width={['80px','128px']} cursor={'pointer'} height={['80px','128px']} src={circleArrow}  onClick={() => navigate(item.path)} />
+									<Stack 
+										cursor={'pointer'} 
+										onClick={() => navigate(item.path)} 
+										direction={'row'} 
+										spacing={'48px'} 
+										justifyContent={'flex-start'} 
+										alignItems={'center'}  
+										key={index}
+										border={'none'}
+										transition={'all .3s ease'}
+										onMouseEnter={() =>_handleMouseEnter(item.menu)}
+										onMouseLeave={() => _handleMouseLeave(item.menu)}
+										_hover={{
+											border:'2px solid #FFFFFF',
+											borderRadius:'98px',
+											px:' 40px',
+											bg: 'none'
+										}}
+									>
+										<Heading fontSize={['45px','96px']} fontWeight={500} color={'#fff'}>{item.menu}</Heading>
+										<Image 
+											width={['80px','128px']} 
+											cursor={'pointer'} 
+											height={['80px','128px']} 
+											src={circleArrow} 
+											onClick={() => navigate(item.path)} 
+											bgColor={ hoveredLink === item.menu ? 'transparent' : '#FFF'}
+											borderRadius={'50%'}
+											py={'32px'} px={'16px'}
+											transition={'all .3s ease'}
+											// _hover={{
+											// 	bg: 'none'
+											// }}
+										/>
 									</Stack>
 								)
 							})

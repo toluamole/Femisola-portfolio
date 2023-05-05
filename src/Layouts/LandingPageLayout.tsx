@@ -2,12 +2,12 @@ import { Box, Flex, Image } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { Footer } from '../Components/FooterSection';
 import backgroundImage from '../Assets/Space-background.png';
-import { HamburgerIcon } from '@chakra-ui/icons';
 import starBox from '../Assets/Images/star-box.svg';
 import { useNavigate } from 'react-router-dom';
 import { AppRoutes } from '../Routes/AppRoutes';
 import { SmoothScroll } from '../Components/SmoothScroll';
 import { Navigation } from '../Components/Navigation';
+import menu from '../Assets/Images/menu.svg';
 
 interface ILandingPageLayoutProps{
     children: React.ReactNode;
@@ -33,12 +33,12 @@ export const LandingPageLayout = ({children, JumbotronSection}:ILandingPageLayou
 					backgroundRepeat="no-repeat"
 					bgSize={'cover'}
 					h={['75vh','100%']}
-					px={['20px','70px']}
+					px={['20px','60px']}
 					// maxW={'1600px'} m={'0 auto'}
 				>
-					<Flex borderBottom={'1px solid white'} py={4} justifyContent={'space-between'} color={'#fff'}>
+					<Flex borderBottom={'1px solid white'} py={6} justifyContent={'space-between'} color={'#fff'}>
 						<Image src={starBox} onClick={() => navigate(AppRoutes.home)} cursor={'pointer'} />
-						<HamburgerIcon onClick={toggleMenu} cursor={'pointer'}/>
+						<Box cursor={'pointer'} onClick={toggleMenu}><Image src={ menu}/></Box>
 					</Flex>
 					<Box  >{JumbotronSection}</Box>
 				</Box> 
