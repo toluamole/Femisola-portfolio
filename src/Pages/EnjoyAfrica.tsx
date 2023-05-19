@@ -52,23 +52,23 @@ export const EnjoyAfrica = ({openModal, closeModal}:IEnjoyAfricaProps) => {
 				</VStack>
 				<Image src={AFRICA} objectFit={'cover'} borderRadius={'24px'} />
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
-					<Heading  color={'#fff'} fontSize={'24px'}>Background & Goals</Heading>
+					<Heading  color={'#fff'} fontSize={'48px'}>Background & Goals</Heading>
 					<Text color={'#fff'} fontSize={'20px'} fontWeight={'light'}>
                         Navigating the food scene can be quite hectic in Nigeria especially those in busy cities like Lagos where people work more than they live. 
                         Finding a decent place to hang out, eat at reasonable prices can be a chore. There really isn’t any way for people to find good restaurants and know their price offerings for food. 
                         What one gets most times are instagram posts by food reviewers or poorly written blogs that just gives a brief view into what these restaurants offer. 
 					</Text>
-					<Heading color={'#fff'} fontSize={'24px'}>Goals</Heading>
+					<Heading color={'#fff'} fontSize={'24px'} fontWeight={400}>Goals</Heading>
 					<Text color={'#fff'} fontSize={'20px'} fontWeight={'light'}>
                         Providing customers access to best deals on discount dining so as to save cost on food and drinks as well as a view into restaurant offers, 
                         details, location and menu.
 					</Text>
 				</Stack>
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading color={'#fff'} fontSize={'48px'}>Role</Heading>
@@ -79,7 +79,7 @@ export const EnjoyAfrica = ({openModal, closeModal}:IEnjoyAfricaProps) => {
 					</Text>
 				</Stack>
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading color={'#fff'} fontSize={'48px'} w={'100%'}>Research</Heading>
@@ -92,10 +92,13 @@ export const EnjoyAfrica = ({openModal, closeModal}:IEnjoyAfricaProps) => {
 					<Heading fontSize={'36px'} fontWeight={'400'} color={'#fff'}>
 						User Flows
 					</Heading>
+					<Text color={'#fff'} fontSize={'20px'} fontWeight={'light'}>
+						Based on the research, we came up with a couple of flows and lo-fi screens, of which I can’t reveal all due to constraints.
+					</Text>
 				</Stack>
 				<Image src={userFlow}  objectFit={'cover'} />
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading color={'#fff'} fontSize={'48px'} >High Fidelity Screens</Heading>
@@ -113,7 +116,7 @@ export const EnjoyAfrica = ({openModal, closeModal}:IEnjoyAfricaProps) => {
 				</Stack>
 				<Image src={Membership}  objectFit={'cover'} />
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading fontSize={'36px'} fontWeight={'400'} color={'#fff'}>
@@ -126,7 +129,7 @@ export const EnjoyAfrica = ({openModal, closeModal}:IEnjoyAfricaProps) => {
 				</Stack>
 				<Image src={Features}  objectFit={'cover'} />
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading fontSize={'36px'} fontWeight={'400'} color={'#fff'}>
@@ -140,7 +143,7 @@ export const EnjoyAfrica = ({openModal, closeModal}:IEnjoyAfricaProps) => {
 				</Stack>
 				<Image src={restaurantDetails}  objectFit={'cover'} />
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading fontSize={'36px'} fontWeight={'400'} color={'#fff'}>
@@ -154,7 +157,7 @@ export const EnjoyAfrica = ({openModal, closeModal}:IEnjoyAfricaProps) => {
 				</Stack>
 				<Image src={Explore}  objectFit={'cover'} />
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading color={'#fff'} fontSize={'36px'} fontWeight={'400'} >Wallet and Cards</Heading>
@@ -165,17 +168,17 @@ export const EnjoyAfrica = ({openModal, closeModal}:IEnjoyAfricaProps) => {
 				</Stack>
 				<Image src={Wallets} />
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
-					<Heading color={'#fff'} fontSize={'36px'} >Empty States</Heading>
+					<Heading color={'#fff'} fontSize={'36px'} fontWeight={'400'} >Empty States</Heading>
 					<Text  color={'#fff'} fontSize={'20px'} fontWeight={'light'}>
                         These are animated empty states that users come across in certain scenarios.
 					</Text>
 				</Stack>
 				<Image src={emptyStates} />
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading color={'#fff'} fontSize={'48px'} >Takeaways</Heading>

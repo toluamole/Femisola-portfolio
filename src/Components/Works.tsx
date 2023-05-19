@@ -1,10 +1,8 @@
 import { Box, 
+	Divider, 
 	Flex, 
-	Heading,
-	Spacer, 
-	Table, 
-	TableContainer, 
-	Tbody, Td, Tr } from '@chakra-ui/react';
+	Heading, 
+	Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 
 const works = [
@@ -37,35 +35,29 @@ const works = [
 
 export const Works = () => {
 	return(
-		<Box>
+		<Box
+			w={'full'}
+		>
 			<Flex
 				justifyContent={'space-between'}
 				direction={['column', 'row']}
 			>
 				<Heading
-					w={['343px','45%']}
+					w={['343px','560px']}
 					fontSize={['36px','60px']}
 					color={'#fff'}
 					fontWeight={500}
 				>Some other projects worked on over the years</Heading>
-			
-				<TableContainer
-					w={['auto','550px']}
-				>
-					<Table size={['md','lg']} variant='simple'>
-						<Tbody>
-							{works.map((item) => {
-								return(
-									<><Tr key={item.id } >
-										<Td  fontFamily={'heading'} fontWeight={'600'} color={'#fff'} fontSize={['18px','24px']}>{item.company}</Td>
-										<Td isNumeric fontFamily={'heading'} fontSize={['18px','24px']} fontWeight={600}  color={'#93979D'}>{item.year}</Td>
-									</Tr>
-									<Spacer h={'56px'}/>
-									</>
-								);})};
-						</Tbody>
-					</Table>
-				</TableContainer>
+				<Stack w={'568px'} spacing={'50px'}>
+					{works.map((item) => {
+						return(
+							<><Flex justifyContent={'space-between'} key={item.id}>
+								<Text fontFamily={'heading'} fontWeight={'600'} color={'#fff'} fontSize={['18px', '24px']}>{item.company}</Text>
+								<Text fontFamily={'heading'} fontSize={['18px', '24px']} fontWeight={600} color={'#93979D'}>{item.year}</Text>
+							</Flex><Divider /></>
+						)
+					})}
+				</Stack>
 			</Flex>
 		</Box>
 	);

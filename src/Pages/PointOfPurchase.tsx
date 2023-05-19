@@ -62,8 +62,9 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 				</VStack>
 				<Image src={POP} objectFit={'cover'} borderRadius={'24px'} />
 				<Stack
-					px={['','200px']}
+					// px={['','200px']}
 					spacing={'24px'}
+					w={'800px'}
 				>
 					<Heading  color={'#fff'} fontSize={'24px'}>Role</Heading>
 					<Text color={'#fff'} fontSize={'20px'} fontWeight={'light'}>
@@ -81,7 +82,7 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 					</Text>
 				</Stack>
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading color={'#fff'} fontSize={'48px'}>Overview</Heading>
@@ -92,7 +93,7 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 					</Text>
 				</Stack>
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading color={'#fff'} fontSize={'48px'} w={'100%'}>Research and Discovery</Heading>
@@ -138,7 +139,7 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 				</Stack>
 				<Image src={ATOMIC}  objectFit={'cover'} />
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading color={'#fff'} fontSize={'48px'} >Takeaways and CA</Heading>
@@ -187,7 +188,7 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 					</Text>
 				</Stack>
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading fontSize={'36px'} fontWeight={'400'} color={'#fff'}>
@@ -209,7 +210,7 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 					</Text>
 				</Stack>
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading fontSize={'36px'} fontWeight={'400'} color={'#fff'}>
@@ -223,7 +224,7 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 					</Text>
 				</Stack>
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading fontSize={'36px'} fontWeight={'400'} color={'#fff'}>
@@ -235,7 +236,7 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 					</Text>
 				</Stack>
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading color={'#fff'} fontSize={'48px'} >Information Architecture</Heading>
@@ -248,7 +249,7 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 				<Image src={Architecture} />
 				<Text px={'250px'} alignSelf={'flex-start'} color={'#fff'} fontSize={'20px'} fontWeight={'light'}>I won&apos;t be able to post the user flows due to legal constraints.</Text>
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading color={'#fff'} fontSize={'48px'} >Low Fidelity Screens</Heading>
@@ -261,7 +262,7 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 				<Image src={Lofi2} />
 				<Image src={Lofi3} />
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading color={'#fff'} fontSize={'48px'} >High Fidelity Screens</Heading>
@@ -280,7 +281,7 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 				<Image src={Hifi8} />
 				<Image src={Hifi9} />
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading color={'#fff'} fontSize={'48px'} >Some Components and Design Assets Used</Heading>
@@ -292,7 +293,7 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 				<Image src={Hifi10} />
 				<Image src={Hifi11} />
 				<Stack
-					px={['','200px']}
+					w={'800px'}
 					spacing={'24px'}
 				>
 					<Heading color={'#fff'} fontSize={'48px'} >Takeaways from this project</Heading>

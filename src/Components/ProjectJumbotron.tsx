@@ -9,8 +9,9 @@ export const ProjectJumbotron = () => {
 			direction={['column', 'row']}
 			justifyContent={'space-between'}
 			alignItems={['flex-start','center']}
-			py={['98px','224px']}
-			px={['10px','70px']}
+			h={'751px'}
+			// py={['98px','224px']}
+			px={['10px','30px']}
 			maxW={'1600px'} m={'0 auto'}
 		>
 			<Stack mb={6}>

@@ -14,7 +14,7 @@ export const AboutJumbotron = () => {
 		>
 			<Heading
 				color={'#fff'}
-				fontSize={['30px','80px']}
+				fontSize={['30px','96px']}
 				textAlign={'left'}
 				alignSelf={'center'}
 				justifySelf={'center'}

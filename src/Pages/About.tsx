@@ -1,4 +1,4 @@
-import { Stack, Text, Image, VStack, SimpleGrid } from '@chakra-ui/react';
+import { Stack, Text, Image, VStack, SimpleGrid, Heading } from '@chakra-ui/react';
 import React from 'react';
 import { AboutJumbotron } from '../Components/AboutJumbotron';
 import { LandingPageLayout } from '../Layouts/LandingPageLayout';
@@ -38,12 +38,15 @@ export const About = () => {
 			<Stack
 				pb={'240px'}
 			>
-				<Text
+				<Heading
 					color={'#fff'}
 					fontSize={['20px','32px']}
-					pt={10} pb={'144px'}
+					fontWeight={500}
+					pt={10} pb={'100px'}
 					lineHeight={'8'}
-				>Let’s get serious! or not<br/> (insert whatever smiley emoji<br/> you prefer)</Text>
+					position={'relative'}
+					bottom={'65px'}
+				>Let’s get serious! or not<br/> (insert whatever smiley emoji<br/> you prefer)</Heading>
 				<SimpleGrid
 					columns={[1,2]}
 					justifyContent={'space-between'}
@@ -51,15 +54,15 @@ export const About = () => {
 				>
 					<Image src={Star} w={'100px'} h={'100px'} alignSelf={'flex-end'} />
 					<VStack
-						justify={'center'}
-						align={'center'}
+						justify={'baseline'}
+						align={'baseline'}
 					>
 						{AboutText.map((item) => {
 							return(
 								<Text
 									color={'#fff'}
-									fontSize={'20px'}
-									fontWeight={'light'}
+									fontSize={'24px'}
+									fontWeight={'400'}
 									pb={6}
 									key={item.id}
 								>

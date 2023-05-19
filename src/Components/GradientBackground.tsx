@@ -16,7 +16,7 @@ interface IGradientBackgroundProp{
 	display: 'none' | 'block' | 'flex';
 }
 
-const socialItems = [
+export const socialItems = [
 	{
 		id: 0,
 		platform: 'Socials',

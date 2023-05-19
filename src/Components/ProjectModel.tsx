@@ -36,12 +36,13 @@ export const ProjectModal = ({open, close, children,background}:IProjectModal) =
 				>
 					<ModalCloseButton 
 						bg={'white'}
-						size={'lg'}
+						// size={'xl'} 
+						boxSize={'50px'}
 						color={'#9175FF'}
 						borderRadius={'50%'}
 						position={'fixed'}
-						left={'90%'}
-						top={'8%'}
+						left={'95%'}
+						top={'5%'}
 					/>
 					<ModalBody px={['','150px']} py={['','100px']}>
 						{children}
