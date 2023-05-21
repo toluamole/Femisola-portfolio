@@ -11,12 +11,14 @@ import { Works } from '../Components/Works';
 import { PointOfPurchase } from './PointOfPurchase';
 import { EnjoyAfrica } from './EnjoyAfrica';
 import { motion } from 'framer-motion';
+import { Procurement } from './Procurement';
 
 export const MotionBox = motion<BoxProps>(Box);
 
 export const Projects = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const { isOpen:open, onOpen:openModal, onClose:close } = useDisclosure();
+	const { isOpen:openProcurement, onOpen:openProcurementModal, onClose:closeProcurementModal } = useDisclosure();
 	const _handleFirstModalClick = () => {
 		console.log('click');
 		onOpen();
@@ -25,6 +27,10 @@ export const Projects = () => {
 	const _handleSecondModalClick = () => {
 		openModal();
 	};
+
+	const _handleOpenProcurement = () => {
+		openProcurementModal();
+	}
 
 	return(
 		<><LandingPageLayout JumbotronSection={<ProjectJumbotron />}>
@@ -159,9 +165,11 @@ export const Projects = () => {
 					align={'flex-start'}
 					direction={['column', 'row']}
 					spacing={42}
+					onClick={ _handleOpenProcurement}
 				>
 					<Box
 						cursor={'pointer'}
+						
 					>
 						<Box
 							overflow={'hidden'}
@@ -237,6 +245,7 @@ export const Projects = () => {
 		</LandingPageLayout>
 		<PointOfPurchase open={open} close={close }  />
 		<EnjoyAfrica openModal={isOpen} closeModal={onClose}  />
+		<Procurement openProcurementModal={openProcurement} closeProcurementModal={closeProcurementModal} />
 		</>
 	);
 };
