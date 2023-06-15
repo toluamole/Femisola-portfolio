@@ -3,7 +3,6 @@ import React from 'react';
 import { ProjectJumbotron } from '../Components/ProjectJumbotron';
 import { LandingPageLayout } from '../Layouts/LandingPageLayout';
 import POS from '../Assets/Images/POS.png';
-import VENDEASE from '../Assets/Images/VENDEASE.png';
 import AFRICA from '../Assets/Images/AFRICA.png';
 import OOBLA from '../Assets/Images/OOBLA.png';
 import PROCUREMENT from '../Assets/Images/PROCUREMENT.png';

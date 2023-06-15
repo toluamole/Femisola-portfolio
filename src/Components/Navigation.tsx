@@ -81,7 +81,7 @@ export const Navigation = ({ isOpen, onClose }:INavigationProps) => {
 	}
 
 	useEffect(() => {
-		setOpen(isOpen);
+		setOpen(open);
 	}, [isOpen]);
 
 	return (
@@ -101,9 +101,6 @@ export const Navigation = ({ isOpen, onClose }:INavigationProps) => {
 				opacity={isOpen ? 1 : 0}
 				visibility={isOpen ? 'visible': 'hidden'}
 				transition={'all .5s ease'}
-				// initial={{ opacity: isOpen ? 0 : '' }}
-				// animate={{ opacity: isOpen ? 1 : 1 }}
-				// exit={{ opacity: isOpen ? 0 : '' }}
 				zIndex={1}
 				px={['30px','60px']}
 			>
@@ -157,9 +154,6 @@ export const Navigation = ({ isOpen, onClose }:INavigationProps) => {
 															borderRadius={'50%'}
 															py={'32px'} px={'16px'}
 															transition={'all .3s ease'}
-															// _hover={{
-															// 	bg: 'none'
-															// }}
 														/>
 													</Stack>
 												</MotionBox>}
