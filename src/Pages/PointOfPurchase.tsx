@@ -2,7 +2,7 @@ import { Heading, Image, Stack, Text,  VStack } from '@chakra-ui/react';
 import React from 'react';
 import { ProjectModal } from '../Components/ProjectModel';
 import Star from '../Assets/Images/Star.svg';
-import POP from '../Assets/Images/POP.png';
+import POS from '../Assets/Images/POS.png';
 import ATOMIC from '../Assets/Images/ATOMIC.png';
 import Architecture from '../Assets/Images/Architecture.png';
 import Lofi1 from '../Assets/Images/Lofi1.png';
@@ -19,6 +19,16 @@ import Hifi8 from '../Assets/Images/Hifi8.png';
 import Hifi9 from '../Assets/Images/Hifi9.png';
 import Hifi10 from '../Assets/Images/Hifi10.png';
 import Hifi11 from '../Assets/Images/Hifi11.png';
+import Hifi12 from '../Assets/Images/Hifi12.png';
+import Hifi13 from '../Assets/Images/Hifi13.png';
+import Hifi14 from '../Assets/Images/Hifi14.png';
+import Splash from '../Assets/Images/Splash.png';
+import Login from '../Assets/Images/Login.png';
+import Password from '../Assets/Images/Password.png';
+import Overview from '../Assets/Images/Overview.png';
+import Notifications from '../Assets/Images/Notifications.png';
+import Settings from '../Assets/Images/Settings.png';
+import Orders from '../Assets/Images/Orders.png';
 import backgroundImage from '../Assets/Space-background.png';
 import { MotionBox, rotation } from './Home';
 
@@ -43,7 +53,7 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 					<Heading 
 						color={'#fff'}
 						fontSize={['60px','88px']}
-					>Point of Purchase</Heading>
+					>Point of Sales</Heading>
 					<Text textAlign={'center'}  color={'#fff'} fontSize={'30px'}  w={['','60%']}>
                         A platform for simplifying menu creation, easier checkout process with localized options, setting taxes and VATs. 
                         I worked as the solo designer to create an intuitive experience with clean aesthetics.
@@ -60,7 +70,7 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 						/>
 					</MotionBox>
 				</VStack>
-				<Image src={POP} objectFit={'cover'} borderRadius={'24px'} />
+				<Image src={POS} objectFit={'cover'} borderRadius={'24px'} />
 				<Stack
 					// px={['','200px']}
 					spacing={'24px'}
@@ -87,7 +97,7 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 				>
 					<Heading color={'#fff'} fontSize={'48px'}>Overview</Heading>
 					<Text color={'#fff'} fontSize={'20px'} fontWeight={'light'}>
-						Point of Purchase system is an enterprise Saas solution that helps small, 
+						Point of Sales system is an enterprise Saas solution that helps small, 
 						medium-sized and corporate restaurants manage their businesses efficiently by simplifying menu creation, 
 						easier checkout process with localized options, setting taxes and VATs, staff management, reports and analytics, etc.
 					</Text>
@@ -280,18 +290,19 @@ export const PointOfPurchase = ({open, close}:IPOPProps) => {
 				<Image src={Hifi7} />
 				<Image src={Hifi8} />
 				<Image src={Hifi9} />
-				<Stack
-					w={'800px'}
-					spacing={'24px'}
-				>
-					<Heading color={'#fff'} fontSize={'48px'} >Some Components and Design Assets Used</Heading>
-					<Text  color={'#fff'} fontSize={'20px'} fontWeight={'light'}>
-						I created a couple of resusable components which I used across the system. 
-						I also worked on the interations and interactive states for all these components.
-					</Text>
-				</Stack>
 				<Image src={Hifi10} />
 				<Image src={Hifi11} />
+				<Image src={Hifi12} />
+				<Image src={Hifi13} />
+				<Image src={Hifi14} />
+				<Heading w={'800px'}  color={'#fff'} fontSize={'48px'} >Mobile</Heading>
+				<Image src={Splash} />
+				<Image src={Login} />
+				<Image src={Password} />
+				<Image src={Overview} />
+				<Image src={Notifications} />
+				<Image src={Settings} />
+				<Image src={Orders} />
 				<Stack
 					w={'800px'}
 					spacing={'24px'}

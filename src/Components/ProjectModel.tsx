@@ -31,13 +31,15 @@ export const ProjectModal = ({open, close, children,background}:IProjectModal) =
 					background={background}
 					backgroundPosition="center"
 					backgroundRepeat="no-repeat"
-					bgSize={'cover'}
+					bgSize={'100%'}
 					backgroundAttachment={'fixed'}
 				>
 					<ModalCloseButton 
 						bg={'white'}
 						// size={'xl'} 
-						boxSize={'50px'}
+						// boxSize={'50px'}
+						w={'50px'}
+						h={'50px'}
 						color={'#9175FF'}
 						borderRadius={'50%'}
 						position={'fixed'}

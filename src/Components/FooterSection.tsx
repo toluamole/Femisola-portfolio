@@ -35,14 +35,10 @@ export const Footer = () => {
 									}}
 									transition={'all .3s ease'}
 									onMouseEnter={() => {
-										// if (index === 0) {
 										setVisible([true, true, true, true, true]);
-										// }
 									}}
 									onMouseLeave={() => {
-										// if (index === 0) {
 										setVisible([true, false, false, false, false]);
-										// }
 									}}
 									justify={'center'}
 									align={'center'}
@@ -68,7 +64,14 @@ export const Footer = () => {
 					})}
 				</HStack>
 				
-				<Text onClick={() => window.location.href = 'mailto:fatogunf@gmail.com'} textDecoration={'underline'} transition={'all .3s ease'} cursor={'pointer'} fontSize={'14px'} _hover={{color: '#4F4CEA'}}>fatogunf@gmail.com</Text>
+				<Text onClick={() => window.location.href = 'mailto:fatogunf@gmail.com'} 
+					textDecoration={'underline'} 
+					transition={'all .3s ease'} 
+					cursor={'pointer'} fontSize={'14px'} 
+					_hover={{color: '#4F4CEA'}}
+				>
+					fatogunf@gmail.com
+				</Text>
 				<Text transition={'all .3s ease'} cursor={'pointer'} fontSize={'14px'} _hover={{color: '#4F4CEA'}}>Resume</Text>
 			</Flex>
 		</Stack>

@@ -12,11 +12,11 @@ const AboutText = [
 	},
 	{
 		id: 1,
-		text: 'Right now, I am interested in creating products that have a lasting positive impact on society. I&apos;m someone that enjoys speaking to people, knowing the problems they face,and eventually providing solutions that solve those problems. '
+		text: 'Right now, I am interested in creating products that have a lasting positive impact on society. I\'m someone that enjoys speaking to people, knowing the problems they face,and eventually providing solutions that solve those problems. '
 	},
 	{
 		id: 2,
-		text: 'Of course, I don&apos;t do that through design alone, come on! I also sing, do a bit of romantic counseling for my friends who are head over heels, and I can be quite funny at times. Trust me.'
+		text: 'Of course, I don\'t do that through design alone, come on! I also sing, do a bit of romantic counseling for my friends who are head over heels, and I can be quite funny at times. Trust me.'
 	},
 	{
 		id: 3,
@@ -24,7 +24,7 @@ const AboutText = [
 	},
 	{
 		id: 4,
-		text: 'I love playing video games, and by games I mean (FIFA), I can&apos;t seem to enjoy something else.'
+		text: 'I love playing video games, and by games I mean (FIFA), I can\'t seem to enjoy something else.'
 	},
 	{
 		id: 5,

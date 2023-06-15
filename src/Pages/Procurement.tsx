@@ -183,8 +183,7 @@ export const Procurement = ({openProcurementModal, closeProcurementModal}:IPOPPr
 				<Image src={solution10} />
 				<Image src={solution11} />
 				<Image src={solution12} />
-				<Heading color={'#fff'} fontSize={'48px'} fontWeight={'600'} >Thank You!</Heading>
-				
+				<Heading color={'#fff'} pl={'220px'} alignSelf={'flex-start'} fontSize={'48px'} fontWeight={'600'} >Thank You!</Heading>
 			</Stack>
 		</ProjectModal>
 	);

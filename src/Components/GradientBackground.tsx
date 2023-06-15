@@ -75,7 +75,7 @@ export const GradientBackground = ({children, display}:IGradientBackgroundProp) 
 				<Box cursor={'pointer'} onClick={toggleMenu}><Image src={ menu}/></Box>
 			</Flex>
 			<Box >{children}</Box>
-			<Flex display={display} borderTop={'1px solid white'} py={4}  justifyContent={'space-between'} color={'#fff'}>
+			<Flex display={display} borderTop={'1px solid white'} py={4} alignItems={'center'} justifyContent={'space-between'} color={'#fff'}>
 				<HStack justifyContent={'space-between'}>
 					{socialItems.map((item, index) => {
 						return(
@@ -91,18 +91,14 @@ export const GradientBackground = ({children, display}:IGradientBackgroundProp) 
 								<HStack
 									style={{
 										visibility: visible[item.id] ?  'visible' : 'hidden',
-										opacity: visible[item.id] ? 1 : 0
+										opacity: visible[item.id] ? 1 : 0,
 									}}
 									transition={'all .3s ease'}
 									onMouseEnter={() => {
-										// if (index === 0) {
 										setVisible([true, true, true, true, true]);
-										// }
 									}}
 									onMouseLeave={() => {
-										// if (index === 0) {
 										setVisible([true, false, false, false, false]);
-										// }
 									}}
 									justify={'center'}
 									align={'center'}
@@ -128,7 +124,13 @@ export const GradientBackground = ({children, display}:IGradientBackgroundProp) 
 					})}
 				</HStack>
 				
-				<Text onClick={() => window.location.href = 'mailto:fatogunf@gmail.com'} textDecoration={'underline'} transition={'all .3s ease'} cursor={'pointer'} fontSize={'14px'} _hover={{color: '#4F4CEA'}}>fatogunf@gmail.com</Text>
+				<Text onClick={() => window.location.href = 'mailto:fatogunf@gmail.com'} 
+					textDecoration={'underline'} 
+					transition={'all .3s ease'} 
+					cursor={'pointer'} 
+					fontSize={'14px'} 
+					_hover={{color: '#4F4CEA'}}
+				>fatogunf@gmail.com</Text>
 				<Text transition={'all .3s ease'} cursor={'pointer'} fontSize={'14px'} _hover={{color: '#4F4CEA'}}>Resume</Text>
 			</Flex>
 			<Navigation isOpen={menuOpen} onClose={toggleMenu} />

@@ -160,8 +160,8 @@ export const Home = () => {
 					>
 						I&apos;m Femisola Fatogun, a product designer based in Lagos,
 						Nigeria. With 5 years of experience designing user-centric products,
-						I&apos;ve honed my skills in creating intuitive and engaging
-						experiences that meet business goals.
+						I thrive on collaborating with stakeholders to exceed expectations and solve real-world problems.
+						My strengths lie in user research, prototyping, wire-framing and bringing ideas to life with precision.
 					</Text>
 					<Text 
 						w={['auto', null, null, '624px']}
@@ -170,37 +170,10 @@ export const Home = () => {
 						mb={'18px'}
 						fontWeight={500}
 					>
-						Working collaboratively with stakeholders is something I&apos;m
-						passionate about, as it allows me to design products that exceed
-						expectations while also solving real-world problems. I take pride in
-						my ability to conduct user research, design prototypes, and create
-						wireframes that bring ideas to life.
-						<br />
-					</Text>
-					<Text 
-						w={['auto', null, null, '624px']}
-						color={'#fff'}
-						fontSize={'20px'}
-						mb={'18px'}
-						fontWeight={500}
-					>
-						For me, the best part of being a product designer is delivering
-						memorable experiences that users love. Whether it&apos;s designing
-						an app, website, or any other digital product, I&apos;m always
-						excited about every step of the design process.
-						<br />
-					</Text>
-					<Text 
-						w={['auto', null, null, '624px']}
-						color={'#fff'}
-						fontSize={'20px'}
-						fontWeight={500}
-					>
-						If you&apos;re looking for a product designer who can help you bring
-						your ideas to life, I&apos;m here to help. My creativity, attention
-						to detail, and ability to work well with teams make me an invaluable
-						asset to any project. Let&apos;s work together to create something
-						amazing!
+						I find joy in delivering memorable experiences that users love, whether it&apos;s designing apps, websites, or other digital products. 
+						If you&apos;re seeking a product designer to bring your ideas to life, I&apos;m here to help. 
+						My creativity, attention to detail, and team collaboration skills make me an invaluable asset. 
+						Let&apos;s create something amazing together!
 					</Text>
 				</Flex>
 			</Stack>

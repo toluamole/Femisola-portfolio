@@ -2,7 +2,7 @@ import { Box, Stack, Text, Image, Heading, useDisclosure, BoxProps } from '@chak
 import React from 'react';
 import { ProjectJumbotron } from '../Components/ProjectJumbotron';
 import { LandingPageLayout } from '../Layouts/LandingPageLayout';
-import POP from '../Assets/Images/POP.png';
+import POS from '../Assets/Images/POS.png';
 import VENDEASE from '../Assets/Images/VENDEASE.png';
 import AFRICA from '../Assets/Images/AFRICA.png';
 import OOBLA from '../Assets/Images/OOBLA.png';
@@ -54,7 +54,7 @@ export const Projects = () => {
 						
 					>
 						<Image
-							src={POP}
+							src={POS}
 							w={'100%'}
 							h={'100%'}
 							as={motion.img}
@@ -71,57 +71,23 @@ export const Projects = () => {
 							color={'#fff'}
 							fontSize={['20px','24px']}
 							mb={'12px'}
-						>POP</Heading>
+						>Point of Sales</Heading>
 						<Text
 							color={'#93979D'}
 							fontSize={['16px','20px']}
 							fontWeight={400}
 						>
-							Worked as sole designer for Vendease POP, a point of sales solution for Restaurants and Hotels,<br /> which allows them create menus and access easy checkouts.
+							Worked as sole designer for Vendease POS, a point of sales solution for Restaurants and Hotels,<br /> which allows them create menus and access easy checkouts.
 						</Text>
 					</Box>
 
 				</Stack>
 				<Stack
-					justify={'space-between'}
-					align={'flex-start'}
+					// justify={'space-between'}
+					align={'center'}
 					direction={['column', 'row']}
 					spacing={10}
 				>
-					<Stack
-						cursor={'pointer'}						
-					>
-						<Box
-							w={['100%','100%']} 
-							height={['400px','500px']}
-							overflow={'hidden'}
-							borderRadius={['24px','40px']}
-							mb={'40px'}
-						>
-							<Image 
-								src={VENDEASE} 
-								w={'100%'}
-								h={'100%'}
-								as={motion.img}
-								whileHover={{
-									scale: 1.02,
-									transition: { duration: 0.5 },
-								}}
-							/>
-						</Box>
-						<Heading
-							fontSize={['20px','24px']}
-							color={'#fff'}
-							mb={'12px'}
-						>Vendease.com (coming soon)</Heading>
-						<Text
-							color={'#93979D'}
-							fontSize={['16px','20px']}
-							fontWeight={400}
-						>
-							Worked as the lead designer for the redesign of Vendease website. Handled style direction and prototyping.
-						</Text>
-					</Stack>
 					<Box
 						onClick={ _handleFirstModalClick}
 						cursor={'pointer'}
@@ -129,7 +95,7 @@ export const Projects = () => {
 					>
 						<Box
 							overflow={'hidden'}
-							w={'100%'}
+							w={['auto', '1216px']}
 							h={['400px', '664px']}
 							mb={'40px'}
 							borderRadius={['24px','40px']}
@@ -138,6 +104,7 @@ export const Projects = () => {
 								src={AFRICA} 
 								w={'100%'}
 								h={'100%'}
+								objectFit='fill'
 								as={motion.img}
 								whileHover={{
 									scale: 1.02,
@@ -146,18 +113,22 @@ export const Projects = () => {
 								
 							/>
 						</Box>
-						<Heading
-							fontSize={['20px','24px']}
-							color={'#fff'}
-							mb={'12px'}
-						>Enjoy Africa</Heading>
-						<Text
-							color={'#93979D'}
-							fontSize={['16px','20px']}
-							fontWeight={400}
+						<Box 
+							w={'1216px'}
 						>
-							Worked as the lead designer for Enjoy Africa, a platform that gives users access to restaurants around them and allows them make reservations access discounts and place orders.
-						</Text>
+							<Heading
+								fontSize={['20px','24px']}
+								color={'#fff'}
+								mb={'12px'}
+							>Enjoy Africa</Heading>
+							<Text
+								color={'#93979D'}
+								fontSize={['16px','20px']}
+								fontWeight={400}
+							>
+								Worked as the lead designer for Enjoy Africa, a platform that gives users access to restaurants around them and allows them make reservations access discounts and place orders.
+							</Text>
+						</Box>
 					</Box>
 				</Stack>
 				<Stack
@@ -166,8 +137,9 @@ export const Projects = () => {
 					direction={['column', 'row']}
 					spacing={42}
 					onClick={ _handleOpenProcurement}
+					w={'1216px'}
 				>
-					<Box
+					<Stack
 						cursor={'pointer'}
 						
 					>
@@ -201,16 +173,15 @@ export const Projects = () => {
 						>
 							Worked as the lead designer for the redesign of Vendease E-procurement platform, Web and Mobile app.
 						</Text>
-					</Box>
+					</Stack>
 					<Box
 						cursor={'pointer'}
 						overflow={'hidden'}
 					>
 						<Box
 							overflow={'hidden'}
-							w={['100%', '600px']} 
-							h={['400px', '500px']}
-							// objectFit={'cover'}
+							w={['100%']}
+							h={['400px', '376px']}
 							mb={'40px'}
 							borderRadius={['24px','40px']}
 						>
@@ -219,6 +190,8 @@ export const Projects = () => {
 								w={'100%'}
 								h={'100%'}
 								as={motion.img}
+								objectFit={'cover'}
+								// boxSize={'100%'}
 								whileHover={{
 									scale: 1.02,
 									transition: { duration: 0.5 },

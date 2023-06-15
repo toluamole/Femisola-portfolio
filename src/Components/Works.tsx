@@ -36,7 +36,7 @@ const works = [
 export const Works = () => {
 	return(
 		<Box
-			w={'full'}
+			w={'1216px'}
 		>
 			<Flex
 				justifyContent={'space-between'}
